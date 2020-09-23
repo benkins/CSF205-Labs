@@ -1,0 +1,11 @@
+b.
+the <div> tag can be used to section or create containers in a html page, whereas the <p> tag is used to define a paragraph
+
+For example, the below is allowed because you can have numerous elements in a <div> tag to create a section, which styles can be applied to, or l
+<div>
+    <p>This is a paragraph</p>
+    <a href="www.google.com">Go to google</a>
+    <img src="funnycat.jpg"/>
+</div>
+
+You could then apply styles to the div, to position, or modify the section
