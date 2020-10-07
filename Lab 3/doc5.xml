@@ -1,0 +1,21 @@
+<bookshelf>
+  <book>
+    <title>An Introduction to XML and Web Technologies</title>
+    <author>Anders Møller</author>
+    <author>Michael I. Schwartzbach</author>
+    <comments>
+      A must buy! 
+    </comments>
+  </book>
+  <book>
+    <title>Object-Oriented Type Systems</title>
+    <author>Jens Palsberg</author>
+    <author>Michael I. Schwartzbach</author>
+    <comments>
+      The best (and possibly only) book I've seen on the topic. I very
+      much liked their approach of starting with a simplified language
+      and adding the necessary features. The algorithms are useful,
+      well presented, and their assumptions are laid out clearly.
+    </comments>
+  </book>
+</bookshelf> 

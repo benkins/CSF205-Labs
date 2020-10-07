@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookshelf>
+  <book>
+    <title>Harry Potter &amp; the Half-Blood Prince</title>
+    <author>J.K. Rowling</author>
+    <comments>
+      The long-awaited, eagerly anticipated, arguably 
+      over-hyped Harry Potter &amp; the Half-Blood Prince 
+      has arrived, and the question on the minds of kids, 
+      adults, fans, and skeptics alike is, "Is it worth 
+      the hype?" 
+    </comments>
+  </book>
+  <book>
+    <title>Kitchen Garden A to Z: Growing, Harvesting, Buying, Storing</title>
+    <author>Mike McGrath</author>
+    <author>Gordon Smith</author>
+    <comments>
+      Do you know which vegetables should never go in the 
+      refrigerator? And which freeze beautifully? All of these 
+      questions-and many more-are answered in this indispensable 
+      guide to vegetables and fruits, whether you shop for them 
+      in a farmers' market, buy them in a supermarket, or grow 
+      them in your own kitchen garden.
+    </comments>
+  </book>
+</bookshelf> 

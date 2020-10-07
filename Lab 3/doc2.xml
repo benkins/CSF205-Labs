@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Books on my upper bookshelf.
+
+          J. Doe., April 2005
+-->
+<bookshelf>
+  <book>
+    <title>At the Tomb of the Inflatable Pig: Travels Through Paraguay</title>
+    <author>John Gimlette</author>
+  </book>
+  <book>
+    <title>An Embarrassment of Mangoes: A Caribbean Interlude</title>
+    <author>Ann Vanderhoof</author>
+  </book>
+  <book>
+    <title>The South Beach Diet Cookbook</title>
+    <author>Arthur S. Agatston</author>
+  </book>
+</bookshelf> 
