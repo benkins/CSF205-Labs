@@ -1,0 +1,18 @@
+Task A
+
+5 recipe elements
+8 ingredients for recipe r104
+r102, r103, r105
+7 is the most depth in the document
+
+Task B
+
+doc one uses ampersands which causes and error, use the utf encoded version instead: &amp;
+doc two had a comment at the top of the file which causes an error. moving the comment under the <uml> elements solves the issue
+the casing of the elements in doc three did not match. Changed all uppercase words to lower case to solves
+The p tags in doc 4 had no ending tag, added them to solves
+Doc five had no errors
+
+foo beloongs to B
+bar belongs to E
+baz belongs to I
