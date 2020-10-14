@@ -1,0 +1,13 @@
+ 
+Task A:
+1)  rcp:collection/rcp:recipe
+2)  rcp:collection/rcp:recipe[1]/rcp:ingredient[1]/@name
+3)  rcp:collection/rcp:recipe[1]/rcp:ingredient[1]/@name='beef cube steak'
+4)  rcp:collection/rcp:recipe/rcp:ingredient[@amount='1']/@name
+5)  rcp:collection/rcp:recipe/rcp:ingredient[@name='milk']/../@id
+
+Task B:
+
+
+xx 
+
