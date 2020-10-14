@@ -14,5 +14,5 @@ The p tags in doc 4 had no ending tag, added them to solves
 Doc five had no errors
 
 foo beloongs to B
-bar belongs to E
-baz belongs to I
+bar belongs to C
+baz doesnt have a namepace
