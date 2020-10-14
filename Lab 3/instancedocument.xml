@@ -1,38 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns:xs="movies.xsd">
-    <xs:movies >
-        <xs:movie>
-            <xs:name>Lord of the Rings: The Return of the King</xs:name>
-            <xs:length>200</xs:length>
-            <xs:year>2003</xs:year>
-            <xs:cast>
-                <xs:person id="1">
-                    <xs:name>Orlando Bloom</xs:name>
-                    <xs:birth>23/01/1983</xs:birth>
-                </xs:person>
-                <xs:person id="2">
-                    <xs:name>Ian McKellen</xs:name>
-                    <xs:birth>22/06/1966</xs:birth>
-                </xs:person>
-            </xs:cast>
-        </xs:movie>
-        <xs:movie>
-            <xs:name>Die Hard</xs:name>
-            <xs:length>170</xs:length>
-            <xs:year>1996</xs:year>
-            <xs:cast>
-                <xs:person id="3">
-                    <xs:name>John McClane</xs:name>
-                    <xs:birth>12/11/1973</xs:birth>
-                </xs:person>
-            </xs:cast>
-        </xs:movie>
-    </xs:movies>
-    <xs:star>
-        <xs:name>
+<movies xmls="./movies.xsd">
+    <movie>
+        <title>Lord of the Rings: The Return of the King</title>
+        <length>200</length>
+        <year>2003</year>
+        <cast>
+            <role ref="1"></role>
+            <role ref="2"></role>
+        </cast>
+    </movie>
+
+    <person id="1">
+        <name>Orlando Bloom</name>
+        <birth>23/01/1983</birth>
+    </person>
+    <person id="2">
+        <name>Ian McKellen</name>
+        <birth>22/06/1966</birth>
+    </person>
+    <star id="1">
+        <name>
             Fernando
-        </xs:name>
-        <xs:birth>20/05/1998</xs:birth>
+        </name>
+        <birth>20/05/1998</birth>
         <award>Oscar</award>
-    </xs:star>
-</schema>
+    </star>
+</movies>
