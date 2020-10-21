@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cardlist>
+	<card>
+		<name>John Doe</name>
+		<title>CEO, Widget Inc.</title>
+		<email>john.doe@widget.inc</email>
+		<phone>(202) 555-1414</phone>
+		<logo uri="hello" />
+	</card>
+	<card>
+		<name>Joe Smith</name>
+		<title>Assistant</title>
+		<email>thrall@widget.inc</email>
+	</card>
+</cardlist>
