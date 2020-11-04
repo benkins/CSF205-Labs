@@ -1,0 +1,86 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:w="http://www.brics.dk/ixwt/while"
+        targetNamespace="http://www.brics.dk/ixwt/while"
+        elementFormDefault="qualified">
+
+  <element name="computation">
+    <complexType>
+      <sequence>
+        <element name="input" minOccurs="0" maxOccurs="unbounded" type="w:NameAttr"/>
+        <element name="declare" minOccurs="0" maxOccurs="unbounded" type="w:NameValueAttr"/>
+        <group ref="w:Statement" minOccurs="0" maxOccurs="unbounded"/>
+        <element name="output" minOccurs="0" maxOccurs="unbounded" type="w:NameAttr"/>
+      </sequence>
+    </complexType>
+  </element>
+
+  <group name="Statement">
+    <choice>
+      <element name="assign">
+        <complexType>
+          <complexContent>
+            <extension base="w:NameAttr">
+              <group ref="w:Expression"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element name="ifNonZero">
+        <complexType>
+          <complexContent>
+            <extension base="w:NameAttr">
+              <group ref="w:Statement" minOccurs="0" maxOccurs="unbounded"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element name="whileNonZero">
+        <complexType>
+          <complexContent>
+            <extension base="w:NameAttr">
+              <group ref="w:Statement" minOccurs="0" maxOccurs="unbounded"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+    </choice>
+  </group>
+
+  <group name="Expression">
+    <choice>
+      <element name="var" type="w:NameAttr"/>
+      <element name="const" type="w:ValueAttr"/>
+      <element name="plus" type="w:TwoExpressions"/>
+      <element name="minus" type="w:TwoExpressions"/>
+      <element name="mult" type="w:TwoExpressions"/>
+      <element name="div" type="w:TwoExpressions"/>
+    </choice>
+  </group>
+
+  <complexType name="NameAttr">
+    <attribute name="name" type="token"/>
+  </complexType>
+
+  <complexType name="ValueAttr">
+    <attributeGroup ref="w:Value"/>
+  </complexType>
+
+  <complexType name="NameValueAttr">
+    <complexContent>
+      <extension base="w:NameAttr">
+        <attributeGroup ref="w:Value"/>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <attributeGroup name="Value">
+    <attribute name="value" type="integer"/>
+  </attributeGroup>
+
+  <complexType name="TwoExpressions">
+    <sequence>
+      <group ref="w:Expression" minOccurs="2" maxOccurs="2"/>
+    </sequence>
+  </complexType>
+
+</schema>
