@@ -1,0 +1,21 @@
+<computation xmlns="http://www.brics.dk/ixwt/while"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.brics.dk/ixwt/while while.xsd">
+  <input name="x"/>
+  <declare name="fac" value="1"/>
+  <whileNonZero name="x">
+    <assign name="fac">
+      <mult>
+        <var name="fac"/>
+        <var name="x"/>
+      </mult>
+    </assign>
+    <assign name="x">
+       <minus>
+         <var name="x"/>
+         <const value="1"/>
+       </minus>
+    </assign>
+  </whileNonZero>
+  <output name="fac"/>
+</computation>
